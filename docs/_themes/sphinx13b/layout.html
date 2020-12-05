@@ -1,0 +1,53 @@
+{#
+:copyright: Copyright 2007-2019 by the Sphinx team (sphinx-doc/sphinx#AUTHORS)
+:license: BSD-2-Clause (LICENSE)
+#}
+{%- extends "basic/layout.html" %}
+
+{# put the sidebar before the body #}
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+
+{% block extrahead %}
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'
+      rel='stylesheet' type='text/css' />
+
+{{ super() }}
+
+{# suppress top navigation bar when on index page #}
+{% if pagename == 'index' %}
+<style type="text/css">
+.related { display: none; }
+</style>
+{% endif %}
+
+{# sidebar scrolling #}
+<script>
+$(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    if (sbh < win.innerHeight()) {
+        sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+        $(document).height() - sbh - 200]));
+    } else {
+        if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+        } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+            $(document).height() - sbh - 200]));
+        }
+    }
+});
+</script>
+{% endblock %}
+
+{% block rootrellink %}
+    <li><a href="{{ pathto('index') }}">Home</a>&#160;|</li>
+    <li><a href="{{ pathto('contents') }}">Documentation</a> &#187;</li>
+{% endblock %}
