@@ -22,4 +22,4 @@ templates_path = ['_templates']
 
 html_static_path = ['_static']
 html_additional_pages = {'index': 'index.html'}
-html_sidebars = {'index': ['indexsidebar.html', 'searchbox.html']}
+html_sidebars = {'index': ['indexsidebar.html', 'searchbox.html', 'ethical-ads.html']}
