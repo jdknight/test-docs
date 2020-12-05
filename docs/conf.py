@@ -12,6 +12,8 @@ copyright = u'test'
 version = '1.0'
 release = '1.0'
 
+show_authors = True
+
 exclude_patterns = ['_build']
 
 html_theme = 'sphinx13b'
