@@ -14,9 +14,11 @@
 
 {{ super() }}
 
-{# suppress top navigation bar when on index page #}
 {% if pagename == 'index' %}
 <style type="text/css">
+{# increase layout size to prevent rtd ad placement format issues #}
+div.body { min-height: 700px; }
+{# suppress top navigation bar when on index page #}
 .related { display: none; }
 </style>
 {% endif %}
