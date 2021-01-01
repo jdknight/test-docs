@@ -19,22 +19,17 @@ Features
 Installation
 ------------
 
-
 .. only:: html
 
-    <p align="center">
+   <p align="center">
       <img src="https://releng.io/assets/overview.png" alt="releng-tool overview"/>
-    </p>
+   </p>
 
 .. only:: not html
 
-    .. image:: https://releng.io/assets/overview.png
-        :align: center
+   .. image:: https://releng.io/assets/overview.png
+      :align: center
 
-
-Install $project by running:
-
-    install project
 
 Contribute
 ----------
