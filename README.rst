@@ -22,7 +22,7 @@ Installation
 .. raw:: html
 
     <p align="center">
-        <img src="https://releng.io/assets/overview.png" alt="releng-tool overview"/>
+        <img src="test.svg" alt="releng-tool overview"/>
     </p>
 
 Contribute
