@@ -19,6 +19,11 @@ Features
 Installation
 ------------
 
+
+.. figure:: https://releng.io/assets/overview.png
+   :align: center
+
+
 Install $project by running:
 
     install project
