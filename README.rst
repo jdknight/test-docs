@@ -20,8 +20,16 @@ Installation
 ------------
 
 
-.. figure:: https://releng.io/assets/overview.png
-   :align: center
+.. only:: html
+
+    <p align="center">
+      <img src="https://releng.io/assets/overview.png" alt="releng-tool overview"/>
+    </p>
+
+.. only:: not html
+
+    .. image:: https://releng.io/assets/overview.png
+        :align: center
 
 
 Install $project by running:
