@@ -21,9 +21,19 @@ Installation
 
 .. raw:: html
 
-    <p align="center">
-        <img src="test.svg" alt="releng-tool overview"/>
-    </p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+        <style>
+            path {
+                fill: #000;
+            }
+            @media (prefers-color-scheme: dark) {
+                path {
+                    fill: #fff;
+                }
+            }
+        </style>
+        <path fill-rule="evenodd" d="M0 0h16v16H0z"/>
+    </svg>
 
 Contribute
 ----------
