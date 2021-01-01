@@ -19,17 +19,11 @@ Features
 Installation
 ------------
 
-.. only:: html
+.. raw:: html
 
-   <p align="center">
-      <img src="https://releng.io/assets/overview.png" alt="releng-tool overview"/>
-   </p>
-
-.. only:: not html
-
-   .. image:: https://releng.io/assets/overview.png
-      :align: center
-
+    <p align="center">
+        <img src="https://releng.io/assets/overview.png" alt="releng-tool overview"/>
+    </p>
 
 Contribute
 ----------
