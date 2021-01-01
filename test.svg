@@ -8,6 +8,17 @@
                 fill: #fff;
             }
         }
+        @media (data-color-mode="light") {
+            path {
+                fill: #f00;
+            }
+        }
+        @media (data-color-mode="dark") {
+            path {
+                fill: #0f0;
+            }
+        }
+
     </style>
     <path fill-rule="evenodd" d="M0 0h16v16H0z"/>
 </svg>
